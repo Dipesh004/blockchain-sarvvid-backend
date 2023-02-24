@@ -22,6 +22,7 @@ class Block {
     do {
       nonce++;
       timestamp = new Date().toLocaleString(); //00cdef ,00
+      // timestamp = Date.now();
 
       hash = cryptoHash(timestamp, prevHash, data, nonce, difficulty);
     } while (
