@@ -1,5 +1,5 @@
 const Block = require("./block");
-const cryptoHash = require("./crypto-hash");
+const cryptoHash = require("../utils/crypto-hash");
 
 class Blockchain {
   constructor() {
@@ -51,11 +51,4 @@ class Blockchain {
   }
 }
 
-// const blockchain = new Blockchain();
-// blockchain.addBlock({ data: "Block1" });
-// blockchain.addBlock({ data: "Block2" });
-// const result = Blockchain.isValidChain(blockchain.chain);
-// console.log(blockchain.chain);
-// console.log(result);
-// //console.log(blockchain);
 module.exports = Blockchain;

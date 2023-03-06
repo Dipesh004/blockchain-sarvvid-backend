@@ -1,5 +1,5 @@
-const Blockchain = require("./blockchain");
-const blockchain = new Blockchain();
+const Blockchain1 = require("../blockchain/blockchain");
+const blockchain = new Blockchain1();
 
 blockchain.addBlock({ data: "new data" });
 console.log(blockchain.chain[blockchain.chain.length - 1]);
